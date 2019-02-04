@@ -1,8 +1,42 @@
-2019-02-02 21:35:08,346 INFO: Microblog startup [in /Users/abulla/Creative Cloud Files/python/flask/microblog/app/__init__.py:43]
-2019-02-02 21:35:50,846 INFO: Microblog startup [in /Users/abulla/Creative Cloud Files/python/flask/microblog/app/__init__.py:43]
-2019-02-02 21:46:21,818 INFO: Microblog startup [in /Users/abulla/Creative Cloud Files/python/flask/microblog/app/__init__.py:43]
-2019-02-02 22:02:55,650 INFO: Microblog startup [in /Users/abulla/Creative Cloud Files/python/flask/microblog/app/__init__.py:43]
-2019-02-02 22:23:16,896 INFO: Microblog startup [in /Users/abulla/Creative Cloud Files/python/flask/microblog/app/__init__.py:43]
-2019-02-02 22:23:35,896 INFO: Microblog startup [in /Users/abulla/Creative Cloud Files/python/flask/microblog/app/__init__.py:43]
-2019-02-02 22:35:53,942 INFO: Microblog startup [in /Users/abulla/Creative Cloud Files/python/flask/microblog/app/__init__.py:43]
-2019-02-02 22:39:38,098 INFO: Microblog startup [in /Users/abulla/Creative Cloud Files/python/flask/microblog/app/__init__.py:43]
+2019-02-03 16:25:28,692 ERROR: Exception on /explore [GET] [in /Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/app/routes.py", line 51, in explore
+    next_url=next_url, prev_url=prev_url)
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/app/templates/index.html", line 6, in block "content"
+    <form action="" method="post">
+  File "/Users/abulla/Creative Cloud Files/python/flask/microblog/flaskvenv/lib/python3.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2019-02-03 16:42:33,367 INFO: Microblog startup [in /Users/abulla/Creative Cloud Files/python/flask/microblog/app/__init__.py:45]
+2019-02-03 17:26:10,739 INFO: Microblog startup [in /Users/abulla/Creative Cloud Files/python/flask/microblog/app/__init__.py:45]
+2019-02-03 17:56:59,841 INFO: Microblog startup [in /Users/abulla/Creative Cloud Files/python/flask/microblog/app/__init__.py:47]
